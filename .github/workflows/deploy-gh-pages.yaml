@@ -1,4 +1,4 @@
-name: copy build to gh-pages branch
+name: copy build to branch
 on:
   push:
     branches:
