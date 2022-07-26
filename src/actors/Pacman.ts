@@ -29,7 +29,7 @@ export class Pacman extends Actor {
     this.timer = 0;
     this.sxParameters = [4, 5, 6, 7, 6, 5];
     this.xFrame = 0;
-    this.yFrame = 10;
+    this.yFrame = 7;
   }
 
   update(delta: number) {
@@ -74,14 +74,14 @@ export class Pacman extends Actor {
         console.log('down');
         this.speed.x = 0;
         this.speed.y = this.maxSpeed;
-        this.yFrame = 8;
+        this.yFrame = 6;
         this.sxParameters = [0, 1, 2, 3, 2, 1];
         break;
       case 'ArrowUp':
         console.log('up');
         this.speed.x = 0;
         this.speed.y = -this.maxSpeed;
-        this.yFrame = 10;
+        this.yFrame = 7;
         this.sxParameters = [0, 1, 2, 3, 2, 1];
         break;
       case 'ArrowLeft':
@@ -89,14 +89,14 @@ export class Pacman extends Actor {
         this.speed.x = -this.maxSpeed;
         this.speed.y = 0;
         this.direction = 180;
-        this.yFrame = 8;
+        this.yFrame = 6;
         this.sxParameters = [4, 5, 6, 7, 6, 5];
         break;
       case 'ArrowRight':
         console.log('right');
         this.speed.x = this.maxSpeed;
         this.speed.y = 0;
-        this.yFrame = 10;
+        this.yFrame = 7;
         this.sxParameters = [4, 5, 6, 7, 6, 5];
         this.direction = 0;
         break;
