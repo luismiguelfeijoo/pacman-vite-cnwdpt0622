@@ -12,7 +12,7 @@ window.onload = () => {
   const car = new Car({ x: 100, y: 100 }, { width: 50, height: 100 }, MAP_A);
   createCircuit(car);
   const actors: IActor[] = [
-    // new FPSViewer({ x: 0, y: 60 }),
+    new FPSViewer({ x: 0, y: 60 }),
     // ...Circuit.barriers,
     // car,
     // Circuit,
