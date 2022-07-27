@@ -3,7 +3,7 @@
     "lib": ["DOM"],
     "incremental": true,
     "target": "es2020",
-    "module": "commonjs",
+    "module": "esnext",
     "outDir": "dist",
     "rootDir": "src",
     "strict": true,
